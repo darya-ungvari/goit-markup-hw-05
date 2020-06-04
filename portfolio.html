@@ -59,63 +59,81 @@
                  <!-- карточки с категориями -->
                     <ul class="flex-container list">
                         <li class="card item">
-                            <img class="category-image" src="./images/technokryak.jpg" alt="скрин вебсайта" width="370" height="294">
+                            <div class="card-overlay">
+                                <img class="category-image" src="./images/technokryak.jpg" alt="скрин вебсайта" width="370" height="294">
+                            </div>
                             <div class="common-text">
                                 <h2 class="category-title">Технокряк</h2>
                                 <p class="category-name" >Веб-сайт</p>
                             </div>
                         </li>
                         <li class="card item">
-                            <img class="category-image" src="./images/posterneworlean.jpg" alt="баскетболисты" width="370" height="294">
+                            <div class="card-overlay">
+                                <img class="category-image" src="./images/posterneworlean.jpg" alt="баскетболисты" width="370" height="294">
+                            </div>
                             <div class="common-text">
                                 <h2 class="category-title">Постер New Orlean vs Golden Stars</h2>
                                 <p class="category-name">Дизайн</p>
                             </div>
                         </li>
                         <li class="card item">
-                            <img class="category-image" src="./images/restorantseafood.jpg" alt="лого ресторана" width="370" height="294">
+                            <div class="card-overlay">
+                                <img class="category-image" src="./images/restorantseafood.jpg" alt="лого ресторана" width="370" height="294">
+                            </div>
                             <div class="common-text">
                                 <h2 class="category-title">Ресторан Seafood</h2>
                                 <p class="category-name">Приложение</p>
                             </div> 
                         </li>
                         <li class="card item">
-                            <img class="category-image" src="./images/earpods.jpg" alt="наушники" width="370" height="294">
+                            <div class="card-overlay">
+                                <img class="category-image" src="./images/earpods.jpg" alt="наушники" width="370" height="294">
+                            </div>
                             <div class="common-text">
                                 <h2 class="category-title">Проект Prime</h2>
                                 <p class="category-name">Маркетинг</p>
                             </div>
                         </li>
                         <li class="card item">
-                            <img class="category-image" src="./images/boxes.jpg" alt="коробки" width="370" height="294">
+                            <div class="card-overlay">
+                                <img class="category-image" src="./images/boxes.jpg" alt="коробки" width="370" height="294">
+                            </div>
                             <div class="common-text">
                                 <h2 class="category-title">Проект Boxes</h2>
                                 <p class="category-name">Приложение</p> 
                             </div>
                         </li>
                         <li class="card item">
-                            <img class="category-image" src="./images/tv.jpg" alt="телевизор" width="370" height="294">
+                            <div class="card-overlay">
+                                <img class="category-image" src="./images/tv.jpg" alt="телевизор" width="370" height="294">
+                            </div>
                             <div class="common-text">
                                 <h2 class="category-title">Inspiration has no Borders</h2>
                                 <p class="category-name">Веб-сайт</p>
                             </div>
                         </li>
                         <li class="card item">
-                            <img class="category-image" src="./images/magazine.jpg" alt="журнал" width="370" height="294">
+                            <div class="card-overlay">
+                                <img class="category-image" src="./images/magazine.jpg" alt="журнал" width="370" height="294">
+                            </div>
                             <div class="common-text">
                                 <h2 class="category-title">Издание Limited Edition</h2>
                                 <p class="category-name">Дизайн</p>
                             </div>
                         </li>
                         <li class="card item">
-                            <img class="category-image" src="./images/projectlabel.jpg" alt="ярлык" width="370" height="294">
+                            <div class="card-overlay">
+                                <img class="category-image" src="./images/projectlabel.jpg" alt="ярлык" width="370" height="294">
+                            </div>
                             <div class="common-text">
                                 <h2 class="category-title">Проект LAB</h2>
                                 <p class="category-name">Маркетинг</p>
                             </div>
                         </li>
                         <li class="card item">
-                            <img class="category-image" src="./images/growingbusiness.jpg" alt="ноутбук" width="370" height="294">
+                            <div class="card-overlay">
+                                <img class="category-image" src="./images/growingbusiness.jpg" alt="ноутбук" width="370" height="294">
+                            </div>
                             <div class="common-text">
                                 <h2 class="category-title">Growing Business</h2>
                                 <p class="category-name">Приложение</p>
@@ -171,31 +189,17 @@
                                     </a>
                                 </li>
                             </ul>
-                            
-                            <!-- <ul class="footer-socialmedia list"> 
-                                <li> <a href="" aria-label="Ссылка на инстаграм">
-                                           
-                                    </a>
-                                </li>
-                                <li> <a href="" aria-label="Ссылка на твитер">
-    
-                                    </a>
-                                </li>
-                                <li> <a href="" aria-label="Ссылка на фейсбук">
-    
-                                 </a>
-                                </li>
-                                <li> <a href="" aria-label="Ссылка на линкедин">
-    
-                                    </a>
-                                </li>
-                            </ul> -->
                         </div>
                         <!-- подпишитесь на рассылку -->
                         <div class="footer-followus">
                             <b class="follow-us">ПОДПИСАТЬСЯ НА РАССЫЛКУ</b> 
                             <input class="ur-email" type="text" name="first_name" placeholder="E-mail">
-                            <button class="button">Подписаться</button>
+                            <button class="button">
+                                Подписаться
+                                <svg class="icon-send" width="24px" height="24px">
+                                    <use href="./images/symbol-defs.svg#icon-send"></use>
+                                </svg>
+                            </button>
                         </div>
             </div>     
             <p class="copyright"> 2020 | Developed by GoIT Students </p>
