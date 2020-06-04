@@ -103,11 +103,9 @@ h2, h3 {
 
     position: fixed;
     top: 0;
-    left: 413px;
+    width: 100%;
     background-color: #fff;
    
-    margin-left: auto;
-    margin-right: auto;
     z-index: 1;
  }
 
@@ -133,10 +131,10 @@ h2, h3 {
     color: var(--title-text-color);
 }
 
-.logo:hover,
 .logo:focus {
 
     color: var(--accent-color);
+    
 }
 
 .logo-accent {
@@ -164,12 +162,18 @@ h2, h3 {
 
 .site-nav-links {
 
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .site-nav-links:hover,
 .site-nav-links:focus {
 
     color: #2196F3;
+
+    
 }
 
 .site-nav-links {
@@ -197,19 +201,6 @@ h2, h3 {
 
 }
 
-.contact-nav-links {
-
-    display: flex;
-
-    text-decoration: none;
-    color: var(--primary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px; 
-    
-
-}
-
 .contact-svg {
 
     align-self: center;
@@ -223,13 +214,31 @@ h2, h3 {
 
 
  
- .contact-nav-links:hover .contact-svg {
+ .contact-nav-links:hover .contact-svg,
+ .contact-nav-links:focus .contact-svg {
 
     fill: var(--accent-color);
 
 } 
 
- .contact-nav-links:hover {
+.contact-nav-links {
+
+    display: flex;
+
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px; 
+    
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+ .contact-nav-links:hover,
+ .contact-nav-links:focus {
 
     color: var(--accent-color);
 
@@ -507,7 +516,8 @@ h2, h3 {
     fill: var(--primary-white-color);
 }
 
-.socialmedia-item:hover {
+.socialmedia-item:hover,
+.socialmedia-item:focus {
 
     background-color: var(--accent-color);
     background-size: 44px 44px;
@@ -610,7 +620,8 @@ h2, h3 {
     
 }
 
-.clients-item:hover {
+.clients-item:hover,
+.clients-item:focus {
     
     border: 1px solid;
     color: var(--accent-color);
