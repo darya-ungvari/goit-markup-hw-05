@@ -369,8 +369,18 @@ h2, h3 {
     
 }
 
-.aboutus-title {
+.aboutus-position {
 
+    position: relative;
+
+}
+
+.aboutus-subtitle {
+    
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
