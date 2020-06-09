@@ -944,12 +944,6 @@ portfolio
 
 }
 
-.card:hover .card-overlay::before {
-    transform: translateY(0);    
-}
-
-
-
 .card-overlay::before {
     display: inline-block;
 
@@ -965,10 +959,24 @@ portfolio
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
-.card-overlay:hover::before {
-    opacity: 0.9;
+.card:hover .card-overlay::before {
+    transform: translateY(0); 
+    opacity: 0.9;   
 }
 
+.description-overlay {
+    position: absolute;
+    color: var(--primary-white-color);
+
+    top: 63px;
+    left: 24px;
+    transform: translateY(170%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+}
+
+.card:hover .description-overlay {
+    transform: translateY(0);
+}
 .category-title {
 
     font-weight: bold;
